@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eman Masry | Data, AI & Automation Solutions Specialist</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Eman Masry, Ph.D.-trained Data, AI & Automation Solutions Specialist. Building practical data, machine learning, and n8n automation solutions that turn complex processes into actionable insights.">
+  <meta name="keywords" content="Data Science, AI Automation, n8n, Machine Learning, Power BI, Python, SQL, Business Intelligence, Damanhour, Egypt">
+  <meta name="author" content="Eman Masry">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Eman Masry | Data, AI & Automation Solutions Specialist">
+  <meta property="og:description" content="Turning Data and Repetitive Processes into Actionable Insights, Intelligent Automation, and Scalable Workflows.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eman Masry | Data, AI & Automation Solutions Specialist">
+  <meta name="twitter:description" content="Ph.D.-trained analyst specializing in Data Science, AI, and Automation. Building practical data and workflow solutions.">
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d9488'/><text x='50' y='65' font-family='sans-serif' font-size='50' font-weight='700' fill='white' text-anchor='middle'>EM</text></svg>">
+
+  <!-- Google Fonts: Poppins (Headings) + Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Inline Theme Init (Zero Flash of Unstyled Theme / FOUC) -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('eman_portfolio_theme');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else {
+          var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+          document.documentElement.setAttribute('data-theme', prefersLight ? 'light' : 'dark');
+        }
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator Bar -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Accessible Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       1. HEADER / NAVIGATION
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Monogram Logo -->
+      <a href="#home" class="logo" aria-label="Eman Masry Home">
+        <span class="logo-monogram" aria-hidden="true">EM</span>
+        <span class="logo-name">Eman Masry</span>
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#workflow" class="nav-link">How I Work</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Drawer Direct CTA Block -->
+        <div class="mobile-nav-cta">
+          <a href="https://wa.me/201001771822?text=Hello%20Eman%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-whatsapp">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.15c-.24.68-1.39 1.3-1.92 1.38-.5.08-1.15.11-3.72-.94-3.28-1.35-5.38-4.69-5.54-4.9-.16-.22-1.33-1.77-1.33-3.37 0-1.6 1.05-2.39 1.42-2.73.37-.34.8-.43 1.07-.43.27 0 .54 0 .78.02.25.01.58-.09.91.7.34.82 1.15 2.81 1.25 3.02.1.21.17.46.03.73-.14.28-.21.46-.42.71-.21.25-.45.56-.64.75-.22.22-.45.46-.19.9.25.45 1.13 1.86 2.42 3.01 1.66 1.48 3.06 1.94 3.49 2.16.44.21.69.18.95-.12.26-.29 1.11-1.3 1.41-1.74.29-.44.59-.37.99-.22.4.15 2.53 1.19 2.97 1.41.44.22.73.33.84.51.11.19.11 1.08-.13 1.76z"></path></svg>
+            Chat on WhatsApp
+          </a>
+          <a href="tel:+201001771822" class="btn btn-sm btn-call">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call Directly
+          </a>
+        </div>
+      </nav>
+
+      <!-- Header Actions: Theme Toggle & CTA -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" aria-pressed="false">
+          <!-- Sun Icon (shown in dark theme) -->
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none"></circle>
+            <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+          </svg>
+          <!-- Moon Icon (shown in light theme) -->
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-sm btn-primary header-cta">Let's Talk</a>
+
+        <!-- Mobile Navigation Toggle -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         2. HOME (HERO SECTION) - 2-COLUMN WITH PHOTO & DYNAMIC ROLE
+         ======================================================================= -->
+    <section class="section hero-section" id="home" aria-labelledby="hero-name">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & CTAs -->
+          <div class="hero-content fade-up-element">
+            <div class="hero-badge-wrap">
+              <span class="section-tag section-tag-live">
+                <span class="live-indicator-dot" aria-hidden="true"></span>
+                Available for Freelance &amp; Contract Work
+              </span>
+            </div>
+
+            <h1 class="hero-name" id="hero-name">Eman Masry</h1>
+            
+            <!-- Dynamic Typing Subtitle for Freelancing Credibility -->
+            <div class="hero-title-container">
+              <span class="hero-title-prefix">Specialist in</span>
+              <span class="hero-title-dynamic" id="hero-dynamic-role" aria-live="polite">Data, AI &amp; Automation</span>
+              <span class="typing-cursor" aria-hidden="true"></span>
+            </div>
+            
+            <p class="hero-tagline">Turning complex data and repetitive operational processes into actionable insights, intelligent automation, and scalable workflows.</p>
+            
+            <p class="hero-supporting">Data Analysis · Business Intelligence · Machine Learning · n8n AI Automation</p>
+            
+            <p class="hero-intro">
+              Ph.D.-trained analyst with 13+ years of professional rigor, building practical data systems and autonomous workflow architectures that save valuable operational time and drive measurable client results.
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="hero-cta-group">
+              <a href="#portfolio" class="btn btn-primary">
+                View Projects
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                Hire / Contact Me
+              </a>
+              <a href="assets/Eman_Masry_CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" download>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download CV
+              </a>
+            </div>
+
+            <!-- Row of Specialization Chips -->
+            <div class="hero-chips-row">
+              <span class="chips-label">Specializations</span>
+              <div class="chips-list">
+                <span class="chip chip-accent">Data Analysis &amp; EDA</span>
+                <span class="chip chip-accent">Power BI &amp; DAX</span>
+                <span class="chip chip-accent">Predictive ML</span>
+                <span class="chip chip-accent">n8n Workflow Automation</span>
+              </div>
+            </div>
+
+            <!-- Tech Strip -->
+            <div class="tech-strip">
+              <span class="tech-strip-label">Core Tech</span>
+              <div class="tech-strip-items">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">SQL</span>
+                <span class="tech-pill">Power BI</span>
+                <span class="tech-pill">n8n</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">AI Agents</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Profile Photo Showcase -->
+          <div class="hero-visual-col fade-up-element delay-1">
+            <div class="hero-visual-card" id="hero-interactive-card">
+              <div class="hero-ambient-glow" aria-hidden="true"></div>
+
+              <!-- Floating Micro-Badge Top Right: AI & n8n -->
+              <div class="hero-float-badge float-badge-top-right">
+                <div class="float-badge-icon badge-accent-ai" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </div>
+                <div class="float-badge-text">
+                  <strong>n8n &amp; AI Agents</strong>
+                  <span>Autonomous Workflows</span>
+                </div>
+              </div>
+
+              <!-- Floating Micro-Badge Bottom Left: PhD Rigor -->
+              <div class="hero-float-badge float-badge-bottom-left">
+                <div class="float-badge-icon badge-accent-phd" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                </div>
+                <div class="float-badge-text">
+                  <strong>Ph.D. Methodology</strong>
+                  <span>Doctoral Precision</span>
+                </div>
+              </div>
+
+              <!-- Profile Photo Frame -->
+              <div class="hero-avatar-frame">
+                <img 
+                  src="assets/profile.jpg" 
+                  alt="Eman Masry - Data, AI & Automation Specialist" 
+                  class="hero-avatar-img" 
+                  id="hero-profile-pic"
+                  loading="eager"
+                  onerror="this.onerror=null; this.src='assets/avatar-fallback.svg';"
+                />
+                <div class="hero-avatar-overlay" aria-hidden="true"></div>
+
+                <!-- Live Availability Badge on Photo -->
+                <div class="avatar-live-tag">
+                  <span class="live-beacon" aria-hidden="true"></span>
+                  <span>Available for Hire</span>
+                </div>
+              </div>
+
+              <!-- Freelance Trust Stats Strip inside Hero Card -->
+              <div class="hero-stats-strip">
+                <div class="hero-stat-box">
+                  <span class="hero-stat-val" data-counter="13" data-counter-suffix="+">13+</span>
+                  <span class="hero-stat-desc">Years Rigor &amp; Exp</span>
+                </div>
+                <div class="hero-stat-sep" aria-hidden="true"></div>
+                <div class="hero-stat-box">
+                  <span class="hero-stat-val" data-counter="25" data-counter-suffix="+">25+</span>
+                  <span class="hero-stat-desc">Pipelines &amp; Flows</span>
+                </div>
+                <div class="hero-stat-sep" aria-hidden="true"></div>
+                <div class="hero-stat-box">
+                  <span class="hero-stat-val" data-counter="100" data-counter-suffix="%">100%</span>
+                  <span class="hero-stat-desc">Milestone Delivery</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         FREELANCE TRUST & CREDIBILITY MARQUEE (Social Proof Ticker)
+         ======================================================================= -->
+    <section class="trust-marquee-section" aria-label="Freelance & Consulting Highlights">
+      <div class="trust-marquee-track">
+        <div class="trust-marquee-content">
+          <span class="trust-pill"><span class="trust-spark">✦</span> 100% Milestone Delivery</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Ph.D. Evidence-Based Analytical Rigor</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Production-Ready n8n AI Automations</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Custom Executive Power BI Dashboards</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Clean &amp; Auditable Python Pipelines</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Direct, Transparent Client Communication</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Available for Fixed-Price &amp; Hourly Projects</span>
+        </div>
+        <!-- Duplicated for seamless infinite CSS loop -->
+        <div class="trust-marquee-content" aria-hidden="true">
+          <span class="trust-pill"><span class="trust-spark">✦</span> 100% Milestone Delivery</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Ph.D. Evidence-Based Analytical Rigor</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Production-Ready n8n AI Automations</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Custom Executive Power BI Dashboards</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Clean &amp; Auditable Python Pipelines</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Direct, Transparent Client Communication</span>
+          <span class="trust-pill"><span class="trust-spark">✦</span> Available for Fixed-Price &amp; Hourly Projects</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. ABOUT SECTION
+         ======================================================================= -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header fade-up-element">
+          <span class="section-tag">Background &amp; Vision</span>
+          <h2 class="section-title" id="about-heading">About Me</h2>
+          <p class="section-subtitle">Combining deep research rigor with modern data science and intelligent automation.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-content fade-up-element">
+            <p>
+              I am a research-trained professional with <strong>13+ years of experience</strong> and a <strong>Ph.D. in Orthopedic Physical Therapy from Cairo University</strong>. My academic and professional path built strong skills in research methodology, critical thinking, evidence-based decision-making, and data interpretation.
+            </p>
+            <p>
+              I am now specializing in <strong>Data Science, AI, and Automation</strong> through a postgraduate program and professional training courses, covering Python, SQL, data visualization, predictive modeling, Power BI, machine learning, AI agents, and n8n workflow automation.
+            </p>
+            <p>
+              I focus on the business problem first, then the data, then the solution. My goal is to reduce repetitive work, improve decision-making, and create measurable value, with a long-term vision of building specialized Data &amp; AI solutions for healthcare.
+            </p>
+          </div>
+
+          <!-- About Profile Spotlight Card with Picture -->
+          <div class="about-bio-card fade-up-element delay-1">
+            <div class="about-bio-avatar-wrap">
+              <img src="assets/profile.jpg" alt="Dr. Eman Masry" class="about-bio-img" loading="lazy" onerror="this.onerror=null; this.src='assets/avatar-fallback.svg';" />
+              <div class="about-bio-badge">Ph.D.</div>
+            </div>
+            <div class="about-bio-info">
+              <h3 class="about-bio-name">Dr. Eman Masry</h3>
+              <p class="about-bio-title">Data Science &amp; AI Specialist</p>
+              <div class="about-bio-tags">
+                <span class="bio-tag">Ph.D. Researcher</span>
+                <span class="bio-tag">AI &amp; n8n Specialist</span>
+                <span class="bio-tag">Power BI / SQL</span>
+              </div>
+              <p class="about-bio-quote">"Bridging empirical healthcare research discipline with intelligent modern automation."</p>
+              <a href="#contact" class="btn btn-sm btn-primary" style="margin-top: 0.5rem; width: 100%;">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                Let's Discuss a Project
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Highlight Cards -->
+        <div class="highlight-cards-grid">
+          <div class="highlight-card fade-up-element delay-1">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><path d="M11 8v6M8 11h6"></path></svg>
+            </div>
+            <h3 class="highlight-title">Research-Driven Thinking</h3>
+            <p class="highlight-desc">Systematic, evidence-based problem solving grounded in doctoral research discipline.</p>
+          </div>
+
+          <div class="highlight-card fade-up-element delay-2">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3 class="highlight-title">Cross-Functional Perspective</h3>
+            <p class="highlight-desc">Clinical acumen, research rigor, data interpretation, and modern automation combined.</p>
+          </div>
+
+          <div class="highlight-card fade-up-element delay-3">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <h3 class="highlight-title">Practical Problem Solving</h3>
+            <p class="highlight-desc">Understand deeply, break down into core elements, test relentlessly, and continually improve.</p>
+          </div>
+
+          <div class="highlight-card fade-up-element delay-4">
+            <div class="highlight-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h3 class="highlight-title">Technology with Purpose</h3>
+            <p class="highlight-desc">Tools serve real-world business outcomes, not the other way around.</p>
+          </div>
+        </div>
+
+        <!-- Philosophy Banner -->
+        <div class="philosophy-banner fade-up-element">
+          <p class="philosophy-quote">Build with Purpose. Solve with Precision. Create Measurable Value.</p>
+        </div>
+
+        <!-- Languages & Location Meta Row -->
+        <div class="about-meta-row fade-up-element">
+          <div class="meta-group">
+            <span class="meta-label">Languages</span>
+            <div class="meta-content">
+              <span class="lang-badge">Arabic (Native)</span>
+              <span class="lang-badge">English (Professional Working Proficiency)</span>
+              <span class="lang-badge">German (Beginner, learning in progress)</span>
+            </div>
+          </div>
+
+          <div class="meta-group">
+            <span class="meta-label">Location</span>
+            <div class="meta-content">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Damanhour, El Behira, Egypt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. SERVICES SECTION (3 cards)
+         ======================================================================= -->
+    <section class="section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header fade-up-element">
+          <span class="section-tag">Core Offerings</span>
+          <h2 class="section-title" id="services-heading">Services</h2>
+          <p class="section-subtitle">Targeted solutions designed to transform data complexities into automated, value-generating assets.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <article class="service-card fade-up-element delay-1">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
+            <h3 class="service-title">Data Analysis &amp; Business Intelligence</h3>
+            <ul class="service-desc-list">
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Data cleaning and preparation</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Exploratory data analysis (EDA)</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Data quality assessment</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Excel and SQL analysis</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>KPI development</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Power BI dashboards &amp; BI reporting</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Business insights and strategic recommendations</span></li>
+            </ul>
+            <div class="chips-list">
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Power BI</span>
+              <span class="chip">Excel</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card fade-up-element delay-2">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+            </div>
+            <h3 class="service-title">Predictive Analytics &amp; Machine Learning</h3>
+            <ul class="service-desc-list">
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Statistical analysis &amp; hypothesis testing</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Predictive modeling &amp; classification</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Forecasting and trend analysis</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Model evaluation &amp; interpretation</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Feature engineering &amp; data transformations</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Data-driven decision support systems</span></li>
+            </ul>
+            <div class="chips-list">
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Statistics</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card fade-up-element delay-3">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
+            <h3 class="service-title">AI Automation &amp; Workflow Optimization</h3>
+            <ul class="service-desc-list">
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>n8n workflow automation</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>AI agents &amp; intelligent routing</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>API integration &amp; custom webhooks</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>JSON payload processing &amp; parsing</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Automated data extraction and reporting</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Application-to-application integrations</span></li>
+              <li class="service-item-bullet"><span class="service-bullet-dot"></span><span>Repetitive business task automation</span></li>
+            </ul>
+            <div class="chips-list">
+              <span class="chip">n8n</span>
+              <span class="chip">AI Agents</span>
+              <span class="chip">Webhooks</span>
+              <span class="chip">APIs</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. HOW I WORK (WORKFLOW TIMELINE)
+         ======================================================================= -->
+    <section class="section" id="workflow" aria-labelledby="workflow-heading">
+      <div class="container">
+        <div class="section-header fade-up-element">
+          <span class="section-tag">Engineering Methodology</span>
+          <h2 class="section-title" id="workflow-heading">How I Work</h2>
+          <p class="section-subtitle">A structured, six-stage workflow ensuring every data and automation initiative delivers tangible value.</p>
+        </div>
+
+        <div class="workflow-timeline fade-up-element">
+          <!-- Step 01 -->
+          <div class="workflow-step">
+            <div class="workflow-num">01</div>
+            <h3 class="workflow-name">Understand</h3>
+            <p class="workflow-desc">Identify the core business problem and assess available data.</p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="workflow-step">
+            <div class="workflow-num">02</div>
+            <h3 class="workflow-name">Analyze</h3>
+            <p class="workflow-desc">Uncover key patterns, anomalies, and workflow bottlenecks.</p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="workflow-step">
+            <div class="workflow-num">03</div>
+            <h3 class="workflow-name">Design</h3>
+            <p class="workflow-desc">Architect the right approach tailored to the real problem.</p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="workflow-step">
+            <div class="workflow-num">04</div>
+            <h3 class="workflow-name">Build</h3>
+            <p class="workflow-desc">Develop robust solutions using Python, SQL, Power BI, ML, n8n, and APIs.</p>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="workflow-step">
+            <div class="workflow-num">05</div>
+            <h3 class="workflow-name">Test &amp; Refine</h3>
+            <p class="workflow-desc">Validate rigorously, test edge cases, and iterate for accuracy.</p>
+          </div>
+
+          <!-- Step 06 -->
+          <div class="workflow-step">
+            <div class="workflow-num">06</div>
+            <h3 class="workflow-name">Deliver Value</h3>
+            <p class="workflow-desc">Deploy a practical, scalable, and immediately useful result.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. PORTFOLIO SECTION (Filterable Case Studies)
+         ======================================================================= -->
+    <section class="section" id="portfolio" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <div class="section-header fade-up-element">
+          <span class="section-tag">Case Studies</span>
+          <h2 class="section-title" id="portfolio-heading">Featured Portfolio</h2>
+          <p class="section-subtitle">Practical implementations spanning intelligent workflow automation, deep data analytics, and predictive systems.</p>
+        </div>
+
+        <!-- Category Filter Bar -->
+        <div class="portfolio-filter-bar fade-up-element" role="group" aria-label="Filter portfolio projects">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="automation" aria-pressed="false">Automation</button>
+          <button type="button" class="filter-btn" data-filter="analytics" aria-pressed="false">Analytics</button>
+          <button type="button" class="filter-btn" data-filter="bi" aria-pressed="false">BI</button>
+          <button type="button" class="filter-btn" data-filter="ml" aria-pressed="false">ML</button>
+        </div>
+
+        <div class="portfolio-grid">
+
+          <!-- PROJECT 5: FEATURED END-TO-END (Full width at top) -->
+          <article class="project-card featured-card fade-up-element" data-category="featured">
+            <div class="project-media-wrap">
+              <!-- Visual Graphic / Screenshot Placeholder -->
+              <img src="assets/projects/project-5-end-to-end.svg" alt="End-to-End Data, AI & Automation Pipeline Architecture" class="project-img" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <div class="project-header-meta">
+                <span class="project-category-tag">Featured · End-to-End System</span>
+                <span class="badge-case-study">Case Study</span>
+              </div>
+              <h3 class="project-title">End-to-End Data → AI → Automation Solution</h3>
+              <p class="project-problem">
+                Disconnected systems where raw data, analytics, predictive models, and daily execution lived in operational silos, requiring constant manual interpretation.
+              </p>
+              
+              <!-- Process Flow Line -->
+              <div class="process-flow-line">
+                <span class="process-flow-label">Process Architecture</span>
+                <div class="process-flow-steps">Data Source → Cleaning → Analysis/BI → Insight or Prediction → AI Decision Layer → n8n Automation → Business Action/Report</div>
+              </div>
+
+              <div class="project-tech-chips">
+                <span class="chip">Python</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Power BI / Streamlit</span>
+                <span class="chip">Machine Learning</span>
+                <span class="chip">AI API</span>
+                <span class="chip">n8n</span>
+                <span class="chip">Webhooks</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary" data-case-study="proj-featured">Case Study</button>
+                <!-- TODO: add link -->
+                <a href="https://github.com/emanelmasrymeral" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" aria-label="GitHub Repository Placeholder for End-to-End Solution">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+                <!-- TODO: add link -->
+                <a href="#portfolio" class="btn btn-sm btn-ghost" aria-label="Live Demo Placeholder for End-to-End Solution">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 1: AUTOMATION -->
+          <article class="project-card fade-up-element delay-1" data-category="automation">
+            <div class="project-media-wrap">
+              <img src="assets/projects/project-1-automation.svg" alt="AI-Powered Business Workflow Automation Diagram" class="project-img" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <div class="project-header-meta">
+                <span class="project-category-tag">Automation</span>
+                <span class="badge-case-study">Case Study</span>
+              </div>
+              <h3 class="project-title">AI-Powered Business Workflow Automation</h3>
+              <p class="project-problem">
+                Manual customer messaging, redundant internal data entry across teams, and slow notification workflows creating operational bottlenecks.
+              </p>
+              
+              <!-- Process Flow Line -->
+              <div class="process-flow-line">
+                <span class="process-flow-label">Process Flow</span>
+                <div class="process-flow-steps">Trigger → Input → Processing → AI → Logic → Action → Notification</div>
+              </div>
+
+              <div class="project-tech-chips">
+                <span class="chip">n8n</span>
+                <span class="chip">AI API</span>
+                <span class="chip">Webhooks</span>
+                <span class="chip">JSON</span>
+                <span class="chip">Google Sheets</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary" data-case-study="proj-automation">Case Study</button>
+                <!-- TODO: add link -->
+                <a href="https://github.com/emanelmasrymeral" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" aria-label="GitHub Repository Placeholder for AI Workflow Automation">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+                <!-- TODO: add link -->
+                <a href="#portfolio" class="btn btn-sm btn-ghost" aria-label="Live Demo Placeholder for AI Workflow Automation">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: ANALYTICS -->
+          <article class="project-card fade-up-element delay-2" data-category="analytics">
+            <div class="project-media-wrap">
+              <img src="assets/projects/project-2-analytics.svg" alt="Business Data Analysis & Insight Generation Visual" class="project-img" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <div class="project-header-meta">
+                <span class="project-category-tag">Analytics</span>
+                <span class="badge-case-study">Case Study</span>
+              </div>
+              <h3 class="project-title">Business Data Analysis &amp; Insight Generation</h3>
+              <p class="project-problem">
+                Unstructured raw multi-channel dataset requiring systematic data cleaning, exploratory analysis, and clear strategic recommendations.
+              </p>
+              
+              <!-- Process Flow Line -->
+              <div class="process-flow-line">
+                <span class="process-flow-label">Process Flow</span>
+                <div class="process-flow-steps">Raw Data → Cleaning → Quality Checks → EDA → Insights</div>
+              </div>
+
+              <div class="project-tech-chips">
+                <span class="chip">Python</span>
+                <span class="chip">Pandas</span>
+                <span class="chip">NumPy</span>
+                <span class="chip">Excel</span>
+                <span class="chip">SQL</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary" data-case-study="proj-analytics">Case Study</button>
+                <!-- TODO: add link -->
+                <a href="https://github.com/emanelmasrymeral" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" aria-label="GitHub Repository Placeholder for Business Data Analysis">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+                <!-- TODO: add link -->
+                <a href="#portfolio" class="btn btn-sm btn-ghost" aria-label="Live Demo Placeholder for Business Data Analysis">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: BI -->
+          <article class="project-card fade-up-element delay-3" data-category="bi">
+            <div class="project-media-wrap">
+              <img src="assets/projects/project-3-bi.svg" alt="Interactive Power BI Dashboard Visual" class="project-img" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <div class="project-header-meta">
+                <span class="project-category-tag">BI</span>
+                <span class="badge-case-study">Case Study</span>
+              </div>
+              <h3 class="project-title">Interactive Power BI Business Intelligence Dashboard</h3>
+              <p class="project-problem">
+                Executive decision-makers lacked a centralized, interactive view of multi-period KPIs, trends, and category performance.
+              </p>
+              
+              <!-- Process Flow Line -->
+              <div class="process-flow-line">
+                <span class="process-flow-label">Process Flow</span>
+                <div class="process-flow-steps">Data Ingestion → Data Modeling → DAX Formulas → Visualizations → KPI Slicers</div>
+              </div>
+
+              <div class="project-tech-chips">
+                <span class="chip">Power BI</span>
+                <span class="chip">Excel</span>
+                <span class="chip">Data Modeling</span>
+                <span class="chip">DAX</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary" data-case-study="proj-bi">Case Study</button>
+                <!-- TODO: add link -->
+                <a href="https://github.com/emanelmasrymeral" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" aria-label="GitHub Repository Placeholder for Power BI Dashboard">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+                <!-- TODO: add link -->
+                <a href="#portfolio" class="btn btn-sm btn-ghost" aria-label="Live Demo Placeholder for Power BI Dashboard">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: ML -->
+          <article class="project-card fade-up-element delay-4" data-category="ml">
+            <div class="project-media-wrap">
+              <img src="assets/projects/project-4-ml.svg" alt="Predictive Analytics and Machine Learning Visual" class="project-img" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <div class="project-header-meta">
+                <span class="project-category-tag">ML</span>
+                <span class="badge-case-study">Case Study</span>
+              </div>
+              <h3 class="project-title">Predictive Analytics &amp; Machine Learning</h3>
+              <p class="project-problem">
+                Reactive decision-making without reliable forecasting or interpretable statistical model evaluation to allocate operational resources.
+              </p>
+              
+              <!-- Process Flow Line -->
+              <div class="process-flow-line">
+                <span class="process-flow-label">Process Flow</span>
+                <div class="process-flow-steps">Preparation → EDA → Features → Model → Evaluation → Interpretation</div>
+              </div>
+
+              <div class="project-tech-chips">
+                <span class="chip">Python</span>
+                <span class="chip">Scikit-learn</span>
+                <span class="chip">Pandas</span>
+                <span class="chip">NumPy</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-primary" data-case-study="proj-ml">Case Study</button>
+                <!-- TODO: add link -->
+                <a href="https://github.com/emanelmasrymeral" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost" aria-label="GitHub Repository Placeholder for Machine Learning Project">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+                <!-- TODO: add link -->
+                <a href="#portfolio" class="btn btn-sm btn-ghost" aria-label="Live Demo Placeholder for Machine Learning Project">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. SKILLS SECTION (Grouped cards, no percentages)
+         ======================================================================= -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header fade-up-element">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title" id="skills-heading">Skills &amp; Expertise</h2>
+          <p class="section-subtitle">A curated spectrum of data science, workflow automation, and analytical capabilities.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Data Science & Analytics -->
+          <div class="skill-category-card fade-up-element delay-1">
+            <div class="skill-cat-header">
+              <svg class="skill-cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              <h3 class="skill-cat-title">Data Science &amp; Analytics</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">EDA</span>
+              <span class="chip">Data Visualization</span>
+              <span class="chip">Predictive Modeling</span>
+              <span class="chip">Statistical Analysis</span>
+            </div>
+          </div>
+
+          <!-- 2. Business Intelligence -->
+          <div class="skill-category-card fade-up-element delay-2">
+            <div class="skill-cat-header">
+              <svg class="skill-cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              <h3 class="skill-cat-title">Business Intelligence</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="chip">Microsoft Excel</span>
+              <span class="chip">Power BI</span>
+              <span class="chip">Dashboard Development</span>
+              <span class="chip">KPI Reporting</span>
+            </div>
+          </div>
+
+          <!-- 3. AI & Automation -->
+          <div class="skill-category-card fade-up-element delay-3">
+            <div class="skill-cat-header">
+              <svg class="skill-cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+              <h3 class="skill-cat-title">AI &amp; Automation</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="chip">n8n</span>
+              <span class="chip">AI Agents</span>
+              <span class="chip">AI-Powered Workflows</span>
+              <span class="chip">API Integration</span>
+              <span class="chip">JSON Parsing</span>
+              <span class="chip">Process Automation</span>
+            </div>
+          </div>
+
+          <!-- 4. Development & Data Tools -->
+          <div class="skill-category-card fade-up-element delay-4">
+            <div class="skill-cat-header">
+              <svg class="skill-cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <h3 class="skill-cat-title">Development &amp; Data Tools</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">VS Code</span>
+            </div>
+          </div>
+
+          <!-- 5. Research & Domain -->
+          <div class="skill-category-card fade-up-element delay-1">
+            <div class="skill-cat-header">
+              <svg class="skill-cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+              <h3 class="skill-cat-title">Research &amp; Domain</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="chip">Research Methodology</span>
+              <span class="chip">Evidence-Based Decision Making</span>
+              <span class="chip">Clinical Research</span>
+              <span class="chip">Healthcare Data Management</span>
+              <span class="chip">Complex Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. EXPERIENCE SECTION (Vertical Timeline)
+         ======================================================================= -->
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header fade-up-element">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title" id="experience-heading">Professional Experience</h2>
+          <p class="section-subtitle">Bridging 13+ years of clinical healthcare research and leadership with cutting-edge data solutions.</p>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Role 1 -->
+          <div class="timeline-item fade-up-element">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2025 – Present</span>
+              <h3 class="timeline-role">Data Science &amp; AI Automation</h3>
+              <div class="timeline-company">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                <span>Freelance / Personal Projects</span>
+              </div>
+              <p class="timeline-desc">
+                Building data analysis and visualization projects, n8n and Python workflow automation, Streamlit apps, ML models, and AI agent architectures.
+              </p>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-item fade-up-element delay-1">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2013 – Present</span>
+              <h3 class="timeline-role">Consultant Physical Therapist</h3>
+              <div class="timeline-company">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                <span>Damanhour Medical National Institute</span>
+              </div>
+              <p class="timeline-desc">
+                Specialized orthopedic care for complex cases; analysis of patient data and clinical metrics to support treatment decisions; leading clinical teams and mentoring junior staff; contributing to evidence-based healthcare research.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         9. EDUCATION & CERTIFICATIONS
+         ======================================================================= -->
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <!-- Education Subsection -->
+        <div class="education-section-block">
+          <div class="section-header fade-up-element">
+            <span class="section-tag">Academic Foundation</span>
+            <h2 class="section-title" id="education-heading">Education</h2>
+            <p class="section-subtitle">Doctoral training in critical methodology combined with postgraduate data science studies.</p>
+          </div>
+
+          <div class="education-grid">
+            <!-- Degree 1 -->
+            <div class="education-card fade-up-element delay-1">
+              <span class="edu-year">2025 – Present (In Progress)</span>
+              <h3 class="edu-degree">Postgraduate Diploma in Data Science</h3>
+              <p class="edu-institution">Cairo University</p>
+              <p class="edu-desc">Curriculum covering Python, SQL, statistical modeling, analytics, visualization, and machine learning.</p>
+            </div>
+
+            <!-- Degree 2 -->
+            <div class="education-card fade-up-element delay-2">
+              <span class="edu-year">2023</span>
+              <h3 class="edu-degree">Ph.D. in Orthopedic Physical Therapy</h3>
+              <p class="edu-institution">Cairo University</p>
+              <p class="edu-desc">Advanced experimental design, scientific data interpretation, statistical validation, and clinical research methodology.</p>
+            </div>
+
+            <!-- Degree 3 -->
+            <div class="education-card fade-up-element delay-3">
+              <span class="edu-year">2011</span>
+              <h3 class="edu-degree">B.Sc. in Physical Therapy</h3>
+              <p class="edu-institution">Cairo University</p>
+              <p class="edu-desc">Graduated with foundational clinical science, evidence-based practices, and biological data analysis.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Subsection -->
+        <div class="certifications-section-block">
+          <div class="section-header fade-up-element">
+            <span class="section-tag">Credentials</span>
+            <h3 class="section-title">Professional Certifications</h3>
+            <p class="section-subtitle">Continuous professional development across machine learning, Python, and artificial intelligence.</p>
+          </div>
+
+          <!-- Dynamic container populated from certifications array in script.js -->
+          <div class="certifications-grid" id="certifications-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         10. WHO I HELP (Target Audience & Pain Points)
+         ======================================================================= -->
+    <section class="section" id="who-i-help" aria-labelledby="who-i-help-heading">
+      <div class="container">
+        <div class="who-i-help-box fade-up-element">
+          <div class="section-header" style="margin-bottom: 1.5rem;">
+            <span class="section-tag">Client Alignment</span>
+            <h2 class="section-title" id="who-i-help-heading">Who I Help</h2>
+            <p class="section-subtitle">Partnering with organizations seeking structured, automated, and scalable operational clarity.</p>
+          </div>
+
+          <!-- Audience Tags -->
+          <div class="audience-tags-wrap">
+            <span class="audience-pill">SMEs</span>
+            <span class="audience-pill">Startups</span>
+            <span class="audience-pill">Business Owners</span>
+            <span class="audience-pill">Operations Teams</span>
+            <span class="audience-pill">Agencies</span>
+          </div>
+
+          <h3 class="pain-points-title">Core Challenges Solved</h3>
+          
+          <!-- 6 Pain-point chips -->
+          <div class="pain-points-grid">
+            <div class="pain-point-chip">
+              <svg class="pain-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <span>Manual repetitive processes</span>
+            </div>
+
+            <div class="pain-point-chip">
+              <svg class="pain-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <span>Disorganized data</span>
+            </div>
+
+            <div class="pain-point-chip">
+              <svg class="pain-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <span>Hard-to-read spreadsheets</span>
+            </div>
+
+            <div class="pain-point-chip">
+              <svg class="pain-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <span>Time-consuming reporting</span>
+            </div>
+
+            <div class="pain-point-chip">
+              <svg class="pain-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <span>Disconnected tools</span>
+            </div>
+
+            <div class="pain-point-chip">
+              <svg class="pain-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <span>Lack of actionable insights</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         11. CONTACT SECTION (Contrasting Background CTA)
+         ======================================================================= -->
+    <section class="section contact-section contrast-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Contact Left: Information & Direct Action Buttons -->
+          <div class="contact-info fade-up-element">
+            <span class="section-tag">Direct Collaboration</span>
+            <h2 class="contact-info-title" id="contact-heading">Let's Turn Your Data and Processes into Practical Solutions.</h2>
+            <p class="contact-text">
+              Whether you need clearer business insights, an interactive dashboard, predictive analysis, or an intelligent automated workflow, I can help transform a complex process into a structured, actionable solution. Let's discuss your project.
+            </p>
+
+            <!-- Two action buttons with icons: Call Me & WhatsApp (Text only, no number printed) -->
+            <div class="contact-direct-actions">
+              <a href="tel:+201001771822" class="btn btn-call" aria-label="Initiate phone call with Eman Masry">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                Call Me
+              </a>
+              <a href="https://wa.me/201001771822?text=Hello%20Eman%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" aria-label="Chat on WhatsApp with Eman Masry">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.15c-.24.68-1.39 1.3-1.92 1.38-.5.08-1.15.11-3.72-.94-3.28-1.35-5.38-4.69-5.54-4.9-.16-.22-1.33-1.77-1.33-3.37 0-1.6 1.05-2.39 1.42-2.73.37-.34.8-.43 1.07-.43.27 0 .54 0 .78.02.25.01.58-.09.91.7.34.82 1.15 2.81 1.25 3.02.1.21.17.46.03.73-.14.28-.21.46-.42.71-.21.25-.45.56-.64.75-.22.22-.45.46-.19.9.25.45 1.13 1.86 2.42 3.01 1.66 1.48 3.06 1.94 3.49 2.16.44.21.69.18.95-.12.26-.29 1.11-1.3 1.41-1.74.29-.44.59-.37.99-.22.4.15 2.53 1.19 2.97 1.41.44.22.73.33.84.51.11.19.11 1.08-.13 1.76z"></path></svg>
+                WhatsApp
+              </a>
+            </div>
+
+            <!-- Direct Contact Links -->
+            <div class="contact-links-list">
+              <!-- Email with 1-Click Copy -->
+              <div class="contact-link-item contact-link-email-item">
+                <svg class="contact-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <div class="contact-email-text-wrap">
+                  <span style="display:block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Email</span>
+                  <a href="mailto:emanelmasrymeral1100@gmail.com" id="contact-email-val">emanelmasrymeral1100@gmail.com</a>
+                </div>
+                <button type="button" class="btn-copy-email" id="btn-copy-email" aria-label="Copy email address to clipboard" title="Copy email address">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-link-item">
+                <svg class="contact-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <div>
+                  <span style="display:block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/eman-masry-805109262" target="_blank" rel="noopener noreferrer">linkedin.com/in/eman-masry-805109262</a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-link-item">
+                <svg class="contact-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <div>
+                  <span style="display:block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">GitHub</span>
+                  <a href="https://github.com/emanelmasrymeral" target="_blank" rel="noopener noreferrer">github.com/emanelmasrymeral</a>
+                </div>
+              </div>
+
+              <!-- Location (City level only) -->
+              <div class="contact-link-item">
+                <svg class="contact-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div>
+                  <span style="display:block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Location</span>
+                  <span>Damanhour, El Behira, Egypt</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Freelance Collaboration Strip -->
+            <div class="freelance-collab-strip">
+              <span class="collab-strip-title">Engagement Formats:</span>
+              <div class="collab-badges-list">
+                <span class="collab-pill">✓ Direct Contract</span>
+                <span class="collab-pill">✓ Upwork / Freelance</span>
+                <span class="collab-pill">✓ Fixed-Price Milestones</span>
+                <span class="collab-pill">✓ Hourly Consulting</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Right: Form -->
+          <div class="contact-card fade-up-element delay-1">
+            <!-- 
+              Formspree Backend Placeholder:
+              To enable Formspree form submissions, set action="https://formspree.io/f/YOUR_FORM_ID" and method="POST"
+            -->
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+              <div class="form-group" id="group-name">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" name="name" class="form-control" placeholder="Jane Doe" required autocomplete="name">
+                <span class="form-error-msg" role="alert">Please enter your name.</span>
+              </div>
+
+              <div class="form-group" id="group-email">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" name="email" class="form-control" placeholder="jane@example.com" required autocomplete="email">
+                <span class="form-error-msg" role="alert">Please provide a valid email address.</span>
+              </div>
+
+              <div class="form-group" id="group-message">
+                <label for="contact-message" class="form-label">Project Details / Message</label>
+                <textarea id="contact-message" name="message" class="form-control" rows="5" placeholder="Briefly describe your data or automation requirements..." required></textarea>
+                <span class="form-error-msg" role="alert">Please enter a message (at least 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Send Message
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <!-- Inline Status Notification -->
+              <div id="form-status-alert" class="form-status-alert" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       12. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-copy">
+        <span>&copy; <span id="current-year"></span> Eman Masry</span>
+        <span aria-hidden="true">·</span>
+        <span>Data, AI &amp; Automation Solutions Specialist</span>
+      </div>
+
+      <button type="button" class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        Back to top
+      </button>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       FLOATING WHATSAPP BUTTON (Bottom-Right, 48px, Safe-Area Aware)
+       ========================================================================= -->
+  <a href="https://wa.me/201001771822?text=Hello%20Eman%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.15c-.24.68-1.39 1.3-1.92 1.38-.5.08-1.15.11-3.72-.94-3.28-1.35-5.38-4.69-5.54-4.9-.16-.22-1.33-1.77-1.33-3.37 0-1.6 1.05-2.39 1.42-2.73.37-.34.8-.43 1.07-.43.27 0 .54 0 .78.02.25.01.58-.09.91.7.34.82 1.15 2.81 1.25 3.02.1.21.17.46.03.73-.14.28-.21.46-.42.71-.21.25-.45.56-.64.75-.22.22-.45.46-.19.9.25.45 1.13 1.86 2.42 3.01 1.66 1.48 3.06 1.94 3.49 2.16.44.21.69.18.95-.12.26-.29 1.11-1.3 1.41-1.74.29-.44.59-.37.99-.22.4.15 2.53 1.19 2.97 1.41.44.22.73.33.84.51.11.19.11 1.08-.13 1.76z"></path>
+    </svg>
+  </a>
+
+  <!-- =========================================================================
+       ACCESSIBLE CASE STUDY MODAL DIALOG
+       Structure: Challenge, Approach, Solution, Technology, Outcome, Business Impact, Key Takeaways
+       ========================================================================= -->
+  <div class="modal-overlay" id="case-study-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-header-text">
+          <div class="modal-badge-row">
+            <span class="badge-case-study">Case Study</span>
+            <span class="project-category-tag" id="modal-category"></span>
+          </div>
+          <h2 class="modal-title" id="modal-title"></h2>
+        </div>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close case study details">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Challenge -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">Challenge</h3>
+          <p class="modal-section-content" id="modal-challenge"></p>
+        </div>
+
+        <!-- Approach -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">Approach</h3>
+          <p class="modal-section-content" id="modal-approach"></p>
+        </div>
+
+        <!-- Solution -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">Solution</h3>
+          <p class="modal-section-content" id="modal-solution"></p>
+        </div>
+
+        <!-- Technology -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">Technology</h3>
+          <div class="modal-tech-list" id="modal-tech"></div>
+        </div>
+
+        <!-- Outcome -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">Outcome</h3>
+          <p class="modal-section-content" id="modal-outcome"></p>
+        </div>
+
+        <!-- Business Impact -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">Business Impact</h3>
+          <p class="modal-section-content" id="modal-impact"></p>
+        </div>
+
+        <!-- Key Takeaways -->
+        <div class="modal-section">
+          <h3 class="modal-section-title">Key Takeaways</h3>
+          <p class="modal-section-content" id="modal-takeaways"></p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-secondary" id="modal-footer-close-btn">Close Case Study</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dynamic Toast Container for Quick Actions -->
+  <div class="toast-container" id="toast-container" role="status" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>

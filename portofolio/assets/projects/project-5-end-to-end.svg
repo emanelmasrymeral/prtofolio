@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="featuredGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <filter id="glowF" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1000" height="500" fill="url(#bgGrad5)" />
+  <rect width="1000" height="500" fill="none" stroke="#1f2937" stroke-width="1" />
+
+  <!-- Grid overlay -->
+  <g stroke="#ffffff" stroke-opacity="0.02" stroke-width="1">
+    <line x1="0" y1="100" x2="1000" y2="100" />
+    <line x1="0" y1="200" x2="1000" y2="200" />
+    <line x1="0" y1="300" x2="1000" y2="300" />
+    <line x1="0" y1="400" x2="1000" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+    <line x1="800" y1="0" x2="800" y2="500" />
+  </g>
+
+  <!-- Featured Banner Header -->
+  <rect x="50" y="35" width="280" height="32" rx="16" fill="#0d9488" fill-opacity="0.2" stroke="#0d9488" stroke-width="1.2" />
+  <text x="190" y="56" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#2dd4bf" text-anchor="middle" letter-spacing="1">FEATURED END-TO-END SYSTEM</text>
+
+  <!-- Glowing Pipeline Path -->
+  <path d="M 120 250 L 260 250 L 400 250 L 540 250 L 680 250 L 820 250" stroke="url(#featuredGlow)" stroke-width="4" stroke-dasharray="8,6" filter="url(#glowF)" />
+
+  <!-- Stage 1: Data Source -->
+  <g transform="translate(60, 180)">
+    <rect width="120" height="140" rx="12" fill="#162032" stroke="#334155" stroke-width="1.5" />
+    <circle cx="60" cy="45" r="22" fill="#1e293b" />
+    <path d="M50 45 C50 40 70 40 70 45 C70 50 50 50 50 45 Z" stroke="#38bdf8" stroke-width="2" fill="none" />
+    <path d="M50 45 V55 C50 60 70 60 70 55 V45" stroke="#38bdf8" stroke-width="2" fill="none" />
+    <text x="60" y="88" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" fill="#f8fafc" text-anchor="middle">Data Ingestion</text>
+    <text x="60" y="105" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">APIs &amp; SQL</text>
+    <text x="60" y="122" font-family="'JetBrains Mono', monospace" font-size="9" fill="#06b6d4" text-anchor="middle">Stage 01</text>
+  </g>
+
+  <!-- Stage 2: Automated Cleaning -->
+  <g transform="translate(210, 180)">
+    <rect width="120" height="140" rx="12" fill="#162032" stroke="#334155" stroke-width="1.5" />
+    <circle cx="60" cy="45" r="22" fill="#1e293b" />
+    <path d="M48 42 L60 35 L72 42 L60 50 Z" stroke="#0d9488" stroke-width="2" fill="none" />
+    <path d="M52 48 L60 55 L68 48" stroke="#0d9488" stroke-width="2" fill="none" />
+    <text x="60" y="88" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" fill="#f8fafc" text-anchor="middle">Data Hygiene</text>
+    <text x="60" y="105" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Pandas / NumPy</text>
+    <text x="60" y="122" font-family="'JetBrains Mono', monospace" font-size="9" fill="#0d9488" text-anchor="middle">Stage 02</text>
+  </g>
+
+  <!-- Stage 3: Analysis & Predictive ML -->
+  <g transform="translate(360, 180)">
+    <rect width="120" height="140" rx="12" fill="#162032" stroke="#334155" stroke-width="1.5" />
+    <circle cx="60" cy="45" r="22" fill="#1e293b" />
+    <path d="M48 52 L56 42 L64 47 L72 37" stroke="#2dd4bf" stroke-width="2" fill="none" stroke-linecap="round" />
+    <text x="60" y="88" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" fill="#f8fafc" text-anchor="middle">ML &amp; BI Layer</text>
+    <text x="60" y="105" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Predictive Insights</text>
+    <text x="60" y="122" font-family="'JetBrains Mono', monospace" font-size="9" fill="#2dd4bf" text-anchor="middle">Stage 03</text>
+  </g>
+
+  <!-- Stage 4: AI Decision Layer -->
+  <g transform="translate(510, 165)">
+    <rect width="130" height="170" rx="14" fill="#162032" stroke="#06b6d4" stroke-width="2" filter="url(#glowF)" />
+    <circle cx="65" cy="50" r="26" fill="#06b6d4" fill-opacity="0.2" />
+    <circle cx="65" cy="50" r="8" fill="#38bdf8" />
+    <path d="M52 50 C52 42 78 42 78 50 C78 58 52 58 52 50 Z" stroke="#38bdf8" stroke-width="2" fill="none" />
+    <text x="65" y="100" font-family="'Poppins', sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">AI Agent</text>
+    <text x="65" y="120" font-family="'Inter', sans-serif" font-size="10" fill="#38bdf8" text-anchor="middle">Decision Routing</text>
+    <text x="65" y="138" font-family="'Inter', sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Threshold Engine</text>
+    <text x="65" y="154" font-family="'JetBrains Mono', monospace" font-size="9" fill="#2dd4bf" text-anchor="middle">Stage 04</text>
+  </g>
+
+  <!-- Stage 5: n8n Workflow Automation -->
+  <g transform="translate(670, 180)">
+    <rect width="120" height="140" rx="12" fill="#162032" stroke="#334155" stroke-width="1.5" />
+    <circle cx="60" cy="45" r="22" fill="#1e293b" />
+    <path d="M50 45 H70 M60 35 V55" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" />
+    <text x="60" y="88" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" fill="#f8fafc" text-anchor="middle">n8n Engine</text>
+    <text x="60" y="105" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Orchestration</text>
+    <text x="60" y="122" font-family="'JetBrains Mono', monospace" font-size="9" fill="#f43f5e" text-anchor="middle">Stage 05</text>
+  </g>
+
+  <!-- Stage 6: Business Action & Impact -->
+  <g transform="translate(820, 180)">
+    <rect width="120" height="140" rx="12" fill="#162032" stroke="#0d9488" stroke-width="1.5" />
+    <circle cx="60" cy="45" r="22" fill="#0d9488" fill-opacity="0.25" />
+    <path d="M50 48 L58 56 L72 38" stroke="#2dd4bf" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="60" y="88" font-family="'Poppins', sans-serif" font-size="12" font-weight="600" fill="#f8fafc" text-anchor="middle">Business Action</text>
+    <text x="60" y="105" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Reports &amp; Alerts</text>
+    <text x="60" y="122" font-family="'JetBrains Mono', monospace" font-size="9" fill="#2dd4bf" text-anchor="middle">Stage 06</text>
+  </g>
+
+  <!-- Architecture Quote / Summary -->
+  <g transform="translate(50, 440)">
+    <text x="0" y="0" font-family="'Poppins', sans-serif" font-size="13" font-weight="600" fill="#f8fafc">Architecture Philosophy: <tspan fill="#2dd4bf" font-weight="400">Connecting Data, Intelligence, and Action into One Unified System</tspan></text>
+  </g>
+</svg>
